@@ -45,8 +45,8 @@
         renderer.shadowMapEnabled = true;
 
         // create the ground plane
-        var planeGeometry = new THREE.PlaneGeometry(60, 20, 1, 1);
-        var planeMaterial = new THREE.MeshLambertMaterial({color: 0xffffff});
+        var planeGeometry = new THREE.PlaneGeometry(60, 60, 1, 1);
+        var planeMaterial = new THREE.MeshLambertMaterial({color: 0x1ed36f});
         var plane = new THREE.Mesh(planeGeometry, planeMaterial);
         plane.receiveShadow = true;
 
@@ -61,7 +61,7 @@
 
         // create a cube
         var cubeGeometry = new THREE.BoxGeometry(4, 4, 4);
-        var cubeMaterial = new THREE.MeshLambertMaterial({color: 0xff0000});
+        var cubeMaterial = new THREE.MeshLambertMaterial({color: 0xD31EBA});
         var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
         cube.castShadow = true;
 
