@@ -44,13 +44,13 @@
         // create a render and set the size
         renderer = new THREE.WebGLRenderer();
 
-        renderer.setClearColor(new THREE.Color(0xEEEEEE, 1.0));
+        renderer.setClearColor(new THREE.Color(0xD31EBA, 1.0));
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.shadowMapEnabled = true;
 
         // create the ground plane
-        var planeGeometry = new THREE.PlaneGeometry(60, 20, 1, 1);
-        var planeMaterial = new THREE.MeshLambertMaterial({color: 0xffffff});
+        var planeGeometry = new THREE.PlaneGeometry(60, 60, 1, 1);
+        var planeMaterial = new THREE.MeshLambertMaterial({color: 0x1ED36F});
         var plane = new THREE.Mesh(planeGeometry, planeMaterial);
         plane.receiveShadow = true;
 
